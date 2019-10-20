@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  node-k8s-demo:
+    container_name: node-k8s-demo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - "8000:8000"
